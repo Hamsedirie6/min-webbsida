@@ -4,15 +4,77 @@
     <meta charset="UTF-8" />
 
     <title>HemLära AB</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: black;
+        background-image: url(bild1.jpg!d);
+        background-size: cover;
+        background-position: center;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 20px;
+        
+        
+      }
+      .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+      header h1 {
+        font-size: 28px;
+        margin: 0;
+      }
+
+      header nav {
+        display: flex;
+        gap: 40px;
+        margin-left: auto;
+      }
+
+      header a{
+        color: white;
+        font-size: 15px;
+        text-decoration: none;
+      }
+
+      header a:hover {
+        text-decoration: underline;
+      }
+       
+
+      
+    </style>
   </head>
   <body>
+    <header></header>
+      <div class="top">
+        <h1>Hemlära AB</h1>
+        <nav>
+          <a href="index.html">Hem</a>
+          <a href="Formulärer.html"><Strong>Anmäl dig</Strong></a>
+          <a href="Tabell.html">Kursöversikt</a>
+          <a href="Kontakt.html">Kontakta Oss</a>
+        </nav>
+      </div>
+    </header>
     <form>
       <label for="Namn">Ange Namn</label><br />
       <input type="text" namn="Namn" placeholder="Förnamn Etfernamn" /><br />
+      
       <label for="Epost">Ange E-postadress</label><br />
       <input type="text" name="E-postadress" placeholder="E-postadress" /><br />
+      
       <label for="Telefonnummer">Ange Telefonnummer</label><br />
       <input type="text" name="Telefonnummer" placeholder="+46" /><br />
+      
       <label for="Kursval">Kursval</label><br />
       <select id="Kursvl">
         <option value="--Selct--">--Select--</option>
@@ -24,7 +86,10 @@
       <br /><br />
 
       <label for="Kommentar">Kommentar</label><br />
-      <textarea name="Kommentar" ></textarea>
+      <textarea name="Kommentar" cols="35" rows="5"></textarea>
+      <br /><br />
+
+      <input type="submit" value="Save" />
     </form>
   </body>
 </html>

@@ -2,62 +2,84 @@
 <html lang="sv">
   <head>
     <meta charset="UTF-8" />
-    <title>HemLära</title>
+    <title>HemLära AB</title>
     <style>
       body {
         font-family: Arial, sans-serif;
         line-height: 1.6;
         color: black;
+        background-image: url(bild1.jpg!d);
+        background-size: cover;
+        background-position: center;
       }
       header {
-        background-color: rgb(77, 175, 197);
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.5);
         color: white;
         padding: 20px;
       }
+      .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
       header h1 {
-        margin-bottom: 10px;
+        font-size: 28px;
         text-align: center;
       }
-
+      header nav {
+        display: flex;
+        gap: 40px;
+        margin-left: auto;
+      }
       header a {
         color: white;
+        font-size: 15px;
         text-decoration: none;
-        margin: 15px;
-        font-size: 18px;
       }
+
       header a:hover {
         text-decoration: underline;
       }
 
-      section {
-        margin: 20px auto;
+      .about {
         padding: 20px;
-        background-color: white;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        max-width: 800%;
+        color: white;
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      section {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1400%;
+        margin: 60px auto;
+        padding: 20px;
+        color: white;
+      }
+
+      .content {
+        flex: 3;
+        margin-right: 20px;
       }
 
       section h2 {
         margin-bottom: 10px;
-        color: rgb(77, 175, 197);
         font-weight: bold;
       }
 
-      section img {
-        float: right;
-        width: 600px;
+      .image {
+        flex: 1.5;
+      }
+      .image img {
+        width: 100%;
+        height: auto;
         border-radius: 5px;
-        margin-top: -200px;
-      }
-      footer {
-        text-align: right;
-        padding: 10px;
-        background-color: rgb(77, 175, 197);
-        color: black;
-        margin-top: 20px;
-      }
-      footer p {
-        margin-bottom: 5px;
       }
     </style>
   </head>
@@ -69,9 +91,12 @@
           <a href="index.html"><strong>Hem</strong></a>
           <a href="Formulärer.html">Anmäl dig</a>
           <a href="Tabell.html">Kursöversikt</a>
+          <a href="Kontakt.html">Kontakta Oss</a>
         </nav>
       </div>
-      <div class="om-oss">
+    </header>
+    <section>
+      <div class="content">
         <h2>Om Oss</h2>
         <p>
           Välkommen till HemLära AB, där vi erbjuder expertledd utbildning inom
@@ -82,34 +107,30 @@
           avancerade koncept, <br />
           med fokus på praktiska färdigheter som efterfrågas på arbetsmarknaden.
         </p>
+        <h2>Populära Kurser:</h2>
+        <p>
+          <strong>HTML/CSS/JavaScript</strong> - Webbutveckling från grunden.
+        </p>
+        <p>
+          <strong>C#</strong> - Objektorienterad programmering för moderna
+          applikationer.
+        </p>
+        <p>
+          <strong>Python</strong> - Mångsidigt programmering för AI,
+          webbutvekling och dataanlys.
+        </p>
+        <p>
+          <strong>C++</strong> - Kraftfull utveckling för prestandakrävande
+          applikationer.
+        </p>
+        <p>
+          Intresserad?
+          <a href="Formulärer.html">Klicka Här</a> för att anmäla dig!
+        </p>
       </div>
-    </header>
-    <section>
-      <h2>Populära Kurser:</h2>
-      <p><strong>HTML/CSS/JavaScript</strong> - Webbutveckling från grunden.</p>
-      <p>
-        <strong>C#</strong> - Objektorienterad programmering för moderna
-        applikationer.
-      </p>
-      <p>
-        <strong>Python</strong> - Mångsidigt programmering för AI, webbutvekling
-        och dataanlys.
-      </p>
-      <p>
-        <strong>C++</strong> - Kraftfull utveckling för prestandakrävande
-        applikationer.
-      </p>
-      <p>
-        Intresserad?
-        <a href="Formulärer.html">Klicka Här</a> för att anmäla dig!
-      </p>
+      <div class="image">
+        <img src="bild.webp" alt="Bild om programmering" />
+      </div>
     </section>
-
-    <footer>
-      <p>
-        <strong>Kontakta Oss</strong>: Info@Hemlära.com <br />
-        2024 HemLära AB
-      </p>
-    </footer>
   </body>
 </html>

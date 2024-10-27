@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
 
     <title>HemLära AB</title>
-    <style>
+   <style>
+    
       body {
         font-family: Arial, sans-serif;
         line-height: 1.6;
@@ -12,46 +13,104 @@
         background-image: url(bild1.jpg!d);
         background-size: cover;
         background-position: center;
-      }
-      header {
         display: flex;
+        flex-direction: column;
         align-items: center;
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        padding: 20px;
-        
-        
+        min-height: 100vh;
+        margin: 0;
       }
+
       .top {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        padding: 20px;
+        padding-bottom: 60px;
+        background-color: rgba(0,0,0,0.5);
+        color: white;
+        box-sizing: border-box;
+        position: fixed;
+        top: 0;
       }
-      header h1 {
-        font-size: 28px;
+
+      .top h1 {
+        font-size: 24px;
         margin: 0;
       }
 
-      header nav {
-        display: flex;
-        gap: 40px;
-        margin-left: auto;
-      }
-
-      header a{
+      .top nav a{
         color: white;
         font-size: 15px;
         text-decoration: none;
+        margin: 0 30px;
       }
 
-      header a:hover {
+      .top nav a:hover {
         text-decoration: underline;
       }
-       
+
+      form {
+        background-color: rgba(255,255,255,0.9);
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        max-width: 280px;
+        width: 100%;
+        margin-top: 120px;
+        text-align: left;
+      }
+
+      form h1 {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 20px;
+        color: black;
+      }
+
+      form label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 3px;
+      }
+
+      form input[type="text"],
+      form select,
+      form textarea {
+        width: 100%;
+        padding: 4px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 14px;
+      }
+
+      form textarea {
+        resize: vertical;
+        height: 40px;
+      }
+
+      form input[tpe="submit"] {
+        width: 100%;
+        background-color: #333;
+        color: white;
+        padding: 8px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        
+      }
+
+      form inpute [type="submit"]:hover {
+        background-color: #555;
+      }
 
       
-    </style>
+   </style>
   </head>
   <body>
     <header></header>
@@ -66,6 +125,7 @@
       </div>
     </header>
     <form>
+      <h1>Kund Information</h1>
       <label for="Namn">Ange Namn</label><br />
       <input type="text" namn="Namn" placeholder="Förnamn Etfernamn" /><br />
       
@@ -89,7 +149,7 @@
       <textarea name="Kommentar" cols="35" rows="5"></textarea>
       <br /><br />
 
-      <input type="submit" value="Save" />
+      <input type="submit" value="Skicka" />
     </form>
   </body>
 </html>

@@ -163,16 +163,16 @@
     <form>
       <h1>Kund Information</h1>
       <label for="Namn">Ange Namn</label><br />
-      <input type="text" namn="Namn" placeholder="Förnamn Etfernamn" /><br />
+      <input type="text" namn="Namn" placeholder="Förnamn Etfernamn" required/><br /> 
       
       <label for="Epost">Ange E-postadress</label><br />
-      <input type="text" name="E-postadress" placeholder="E-postadress" /><br />
+      <input type="email" name="E-postadress" placeholder="E-postadress" required/><br />
       
       <label for="Telefonnummer">Ange Telefonnummer</label><br />
-      <input type="text" name="Telefonnummer" placeholder="+46" /><br />
+      <input type="number" name="Telefonnummer" placeholder="+46" required/><br />
       
       <label for="Kursval">Kursval</label><br />
-      <select id="Kursvl">
+      <select id="Kursval" name="kursval" required>
         <option value="--Selct--">--Select--</option>
         <option value="HTMl/CSS/JavaScript">HTMl/CSS/JavaScript</option>
         <option value="C#">C#</option>

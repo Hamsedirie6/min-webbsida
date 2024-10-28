@@ -1,9 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
-
     <title>HemLära AB</title>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: black;
+        background-image: url(bild1.jpg!d);
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        }
+
+
+
+        header {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 20px;
+        }
+        .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+
+      header h1 {
+        font-size: 28px;
+        text-align: center;
+      }
+      header nav {
+        display: flex;
+        gap: 40px;
+        margin-left: auto;
+      }
+      header a {
+        color: white;
+        font-size: 15px;
+        text-decoration: none;
+      }
+
+      header a:hover {
+        text-decoration: underline;
+      }
+
+      main {
+        padding: 20px;
+        max-width: 800px;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        margin-top: 20px;
+      }
+
+      h2 {
+        text-align: center;
+        color: black;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      th, td {
+        padding: 16px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+
+
+      tr:hover {
+        background-color: #f2f2f2;
+      }
+
+      footer {
+        text-align: left;
+        color: black;
+        width: 100%;
+        font-size: 16px;
+      }
+
+
+    </style>
   </head>
   <body>
     <header>
@@ -13,7 +99,6 @@
           <a href="index.html">Hem</a>
           <a href="Formulärer.html">Anmäl dig</a>
           <a href="Tabell.html"><strong>Kursöversikt</strong></a>
-          <a href="Kontakt.html">Kontakta Oss</a>
         </nav>
       </div>
     </header>
@@ -22,48 +107,52 @@
         <table>
             <thead>
                 <tr>
-                    <td>Kursnamn</td>
+                    <th>Kursnamn</th>
                     <td>Datum</td>
-                    <td>Pris</td>
+                    <td>Plats</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>HTMl/CSS/JavaScript</td>
+                    <td>15 Nov 2024</td>
+                    <td>Göteborg</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>C#</td>
+                    <td>12 Nov 2024</td>
+                    <td>Göteborg</td>
                 </tr>
                 <tr></tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Python</td>
+                    <td>16 Nov 2024</td>
+                    <td>Göteborg</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>C++</td>
+                    <td>20 Nov 2024</td>
+                    <td>Stockholm</td>
                 </tr>
                 <tr></tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Databaser</td>
+                    <td>25 Nov 2024</td>
+                    <td>Stockholm</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Bash</td>
+                    <td>30 Nov 2024</td>
+                    <td>Stockholm</td>
                 </tr>
                 <tr></tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>PowerShell</td>
+                    <td>5 Dec 2024</td>
+                    <td>Stockholm</td>
                 </tr>
                
             </thead>
         </table>
     </main>
+    <footer>
+        Kontakta oss | Info@HemLära.com <br />
+        2024 HemLära AB
+      </footer>
   </body>
 </html>

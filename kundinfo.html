@@ -4,15 +4,10 @@
     <meta charset="UTF-8" />
 
     <title>HemLära AB</title>
-   <style>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
       body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        color: black;
-        background-image: url(bild1.jpg!d);
-        background-size: cover;
-        background-position: center;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -21,44 +16,33 @@
       }
 
       .top {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
         padding: 20px;
         padding-bottom: 60px;
-        background-color: rgba(0,0,0,0.5);
+        background-color: rgba(0, 0, 0, 0.5);
         color: white;
         box-sizing: border-box;
-        position: fixed;
         top: 0;
+        width: 100vw;
       }
 
       .top h1 {
-        font-size: 24px;
         margin: 0;
       }
 
-      .top nav a{
-        color: white;
-        font-size: 15px;
-        text-decoration: none;
+      .top nav a {
         margin: 0 30px;
       }
 
-      .top nav a:hover {
-        text-decoration: underline;
-      }
-
       form {
-        background-color: rgba(255,255,255,0.9);
+        background-color: rgba(255, 255, 255, 0.9);
         padding: 10px;
         border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         max-width: 280px;
         width: 100%;
         margin-top: 120px;
         text-align: left;
+        margin: auto;
       }
 
       form h1 {
@@ -102,38 +86,25 @@
         font-size: 14px;
         font-weight: bold;
         transition: background-color 0.3s ease;
-        
       }
 
       form inpute [type="submit"]:hover {
         background-color: #555;
       }
-      footer {
-        text-align: left;
-        color: black;
-        width: 100%;
-        font-size: 16px;
-      }
-
       @media (max-width: 768px) {
+        .top nav {
+          flex-direction: column;
+          gap: 40px;
+        }
         .top {
           flex-direction: column;
           align-items: flex-start;
         }
-        .top h1 {
-          font-size: 20px;
-          text-align: left;
-        }
-        .top nav {
-          flex-direction: column;
-          gap: 10px;
-          margin-left: 0;
-        }
-
         form {
           max-width: 90%;
-          margin-top: 100px;
+          margin-top: 140px;
           padding: 15px;
+          margin: auto;
         }
 
         form h1 {
@@ -141,37 +112,53 @@
         }
 
         footer {
-          font-size: 14px;
-          padding: 10px;
+          text-align: left;
+          color: black;
+          width: 100%;
+          font-size: 16px;
         }
       }
-
-      
-   </style>
+    </style>
   </head>
   <body>
-    <header></header>
+    <header>
       <div class="top">
         <h1>Hemlära AB</h1>
         <nav>
           <a href="index.html">Hem</a>
-          <a href="Formulärer.html"><Strong>Anmäl dig</Strong></a>
-          <a href="Tabell.html">Kursöversikt</a>
+          <a href="kundinfo.html"><strong>Anmäl dig</strong></a>
+          <a href="kursinfo.html">Kursöversikt</a>
         </nav>
       </div>
     </header>
     <form>
       <h1>Kund Information</h1>
-      <label for="Namn">Ange Namn</label><br />
-      <input type="text" namn="Namn" placeholder="Förnamn Etfernamn" required/><br /> 
-      
-      <label for="Epost">Ange E-postadress</label><br />
-      <input type="email" name="E-postadress" placeholder="E-postadress" required/><br />
-      
-      <label for="Telefonnummer">Ange Telefonnummer</label><br />
-      <input type="number" name="Telefonnummer" placeholder="+46" required/><br />
-      
-      <label for="Kursval">Kursval</label><br />
+      <label for="Namn">Ange Namn</label>
+      <input
+        type="text"
+        namn="Namn"
+        placeholder="Förnamn Efernamn"
+        required
+      /><br />
+      <br />
+
+      <label for="Epost">Ange E-postadress</label>
+      <input
+        type="email"
+        name="E-postadress"
+        placeholder="Exempel@hotmail.com"
+        required
+      /><br /><br />
+
+      <label for="Telefonnummer">Ange Telefonnummer</label>
+      <input
+        type="number"
+        name="Telefonnummer"
+        placeholder="+46"
+        required
+      /><br /><br />
+
+      <label for="Kursval">Kursval</label>
       <select id="Kursval" name="kursval" required>
         <option value="--Selct--">--Select--</option>
         <option value="HTMl/CSS/JavaScript">HTMl/CSS/JavaScript</option>

@@ -8,114 +8,122 @@
     <link rel="stylesheet" href="style.css" />
     <style>
       body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        min-height: 100vh;
-        margin: 0;
+        display: flex; /* Flexbox-layout */
+        flex-direction: column; /* Kolumnarrangemang */
+        align-items: center; /* Centrera horisontellt */
+        min-height: 100vh; /* Minsta höjd 100% av viewport */
+        margin: 0; /* Ta bort standardmarginaler */
       }
 
       .top {
-        padding: 20px;
-        padding-bottom: 60px;
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        box-sizing: border-box;
-        top: 0;
-        width: 100vw;
+        padding: 20px; /* Padding runt toppen */
+        padding-bottom: 60px; /* Extra padding nedtill */
+        background-color: rgba(0, 0, 0, 0.5); /* Halvgenomskinlig bakgrund */
+        color: white; /* Vit text */
+        box-sizing: border-box; /* Inkludera padding i bredd */
+        top: 0; /* Positionera toppen */
+        width: 100vw; /* Full bredd av viewport */
       }
 
       .top h1 {
-        margin: 0;
+        margin: 0; /* Ingen marginal för h1 */
       }
 
       .top nav a {
-        margin: 0 30px;
+        margin: 0 30px; /* Marginal mellan länkar */
       }
 
       form {
-        background-color: rgba(255, 255, 255, 0.9);
-        padding: 10px;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        max-width: 280px;
-        width: 100%;
-        margin-top: 120px;
-        text-align: left;
-        margin: auto;
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.9
+        ); /* Halvgenomskinlig vit bakgrund */
+        padding: 10px; /* Padding inuti formuläret */
+        border-radius: 8px; /* Rundade hörn */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Skugga */
+        max-width: 280px; /* Maximal bredd */
+        width: 100%; /* Full bredd */
+        margin-top: 120px; /* Marginal ovanför */
+        text-align: left; /* Vänsterjusterad text */
+        margin: auto; /* Centrerar formuläret */
       }
 
       form h1 {
-        text-align: center;
-        font-size: 18px;
-        margin-bottom: 20px;
-        color: black;
+        text-align: center; /* Centrerad rubrik */
+        font-size: 18px; /* Rubrikstorlek */
+        margin-bottom: 20px; /* Marginal under rubrik */
+        color: black; /* Svart text för rubrik */
       }
 
       form label {
-        font-weight: bold;
-        display: block;
-        margin-bottom: 3px;
+        font-weight: bold; /* Fet stil för etiketter */
+        display: block; /* Blockdisplay för etiketter */
+        margin-bottom: 3px; /* Marginal under etikett */
       }
 
       form input[type="text"],
       form select,
       form textarea {
-        width: 100%;
-        padding: 4px;
-        margin-bottom: 10px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-        font-size: 14px;
+        width: 100%; /* Fyller bredden */
+        padding: 4px; /* Padding i fälten */
+        margin-bottom: 10px; /* Marginal under fälten */
+        border: 1px solid #ccc; /* Grå kantlinje */
+        border-radius: 4px; /* Rundade hörn */
+        box-sizing: border-box; /* Inkludera padding i bredd */
+        font-size: 14px; /* Textstorlek */
       }
 
       form textarea {
-        resize: vertical;
-        height: 40px;
+        resize: vertical; /* Vertikal storleksändring */
+        height: 40px; /* Höjd på textområde */
       }
 
       form input[type="submit"] {
-        width: 100%;
-        background-color: #333;
-        color: white;
-        padding: 8px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 14px;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
+        width: 100%; /* Fyller bredden */
+        background-color: #333; /* Mörk bakgrund */
+        color: white; /* Vit text */
+        padding: 8px; /* Padding i knappen */
+        border: none; /* Ingen kantlinje */
+        border-radius: 4px; /* Rundade hörn */
+        cursor: pointer; /* Handpekare vid hover */
+        font-size: 14px; /* Textstorlek */
+        font-weight: bold; /* Fet stil */
+        transition: background-color 0.3s ease; /* Mjuk övergång */
       }
 
       form input[type="submit"]:hover {
-        background-color: #555;
+        background-color: #555; /* Ljusare bakgrund vid hover */
       }
+
       @media (max-width: 768px) {
         .top nav {
-          flex-direction: column;
-          gap: 40px;
+          flex-direction: column; /* Kolumnlayout för länkar */
+          gap: 40px; /* Avstånd mellan länkar */
         }
+
         .top {
-          flex-direction: column;
-          align-items: flex-start;
+          flex-direction: column; /* Kolumnlayout */
+          align-items: flex-start; /* Vänsterjustering */
         }
+
         form {
-          max-width: 90%;
-          margin-top: 140px;
-          padding: 15px;
-          margin: auto;
+          max-width: 90%; /* Ökar maximal bredd */
+          margin-top: 140px; /* Marginal ovanför */
+          padding: 15px; /* Ökad padding */
+          margin: auto; /* Centrerar formuläret */
         }
 
         form h1 {
-          font-size: 16px;
+          font-size: 16px; /* Minskar rubrikstorlek */
         }
 
         footer {
-          text-align: left;
-          color: black;
-          width: 100%;
-          font-size: 16px;
+          text-align: left; /* Vänsterjusterad footer */
+          color: black; /* Svart text */
+          width: 100%; /* Full bredd */
+          font-size: 16px; /* Textstorlek */
         }
       }
     </style>

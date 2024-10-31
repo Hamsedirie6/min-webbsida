@@ -1,60 +1,67 @@
+
 body {
-    font-family: Arial,  sans-serif;
-    line-height: 1.6;
-    color: black;
-    background-image: url(bild1.jpg);
-    background-size: cover;
-    background-position: center;
+    font-family: Arial, sans-serif; /* Använder Arial som typsnitt för texten */
+    line-height: 1.6; /* Sätter radavstånd för bättre läsbarhet */
+    color: black; /* Textfärg sätts till svart */
+    background-image: url(bild1.jpg); /* Sätter bakgrundsbild */
+    background-size: cover; /* Gör så att bakgrundsbilden täcker hela sidan */
+    background-position: center; /* Centrera bakgrundsbilden */
 }
+
+
 .top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-   
-    
-  }
-  .top h1 {
-    font-size: 28px;
-  }
-  .top nav a{
-    color: white;
-    font-size: 15px;
-    text-decoration: none;
-  }
-  
-  .top nav a:hover {
-    text-decoration: underline;
-  }
+    display: flex; /* Använder flexbox för layout */
+    justify-content: space-between; /* Placerar innehåll med jämnt mellanrum */
+    align-items: center; /* Centrerar innehåll vertikalt */
+}
+
+
+.top h1 {
+    font-size: 28px; /* Sätter storleken på rubriken */
+}
+
+
+.top nav a {
+    color: white; /* Vit textfärg för navigeringslänkar */
+    font-size: 15px; /* Sätter storleken på texten */
+    text-decoration: none; /* Tar bort understrykning på länkar */
+}
+
+
+.top nav a:hover {
+    text-decoration: underline; /* Understryker länkar när musen svävar över dem */
+}
+
 
 footer {
-    text-align: left;
-    color: black;
-    width: 100%;
-    font-size: 16px;
-    }
+    text-align: left; /* Vänsterjusterad text i footern */
+    color: black; /* Svart textfärg för kontrast */
+    width: 100%; /* Full bredd för footern */
+    font-size: 16px; /* Teckenstorlek för footern */
+}
 
-    .top nav {
-        display: flex;
-        gap: 40px;
-      }
+
+.top nav {
+    display: flex; /* Använder flexbox för att placera navigeringslänkar i rad */
+    gap: 40px; /* Mellanrum mellan navigeringslänkarna för tydlighet */
+}
+
 
 @media (max-width: 768px) {
     .top {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: column; /* Ändrar layout till kolumnformat för små skärmar */
+        align-items: flex-start; /* Vänsterjusterar innehållet i top-sektionen */
     }
+
     
     .top h1 {
-        font-size: 20px;
-        text-align: left;
+        font-size: 20px; /* Minskar storleken på rubriken */
+        text-align: left; /* Vänsterjusterar texten */
     }
+
+    
     .top nav {
-        flex-direction: column;
-        gap: 10px;
-        
+        flex-direction: column; /* Ändrar layout till kolumnformat */
+        gap: 10px; /* Minskar mellanrummet mellan länkarna */
     }
-
-
 }
-
-

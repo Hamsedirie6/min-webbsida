@@ -7,74 +7,88 @@
     <link rel="stylesheet" href="style.css" />
     <style>
       body {
-        margin: 0;
+        margin: 0; /* Tar bort standardmarginaler */
       }
 
       header {
-        display: flex;
-        flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        padding: 20px;
+        display: flex; /* Använder flexbox för layout */
+        flex-direction: column; /* Visar innehåll i kolumn */
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.5
+        ); /* Halvtransparent svart bakgrund */
+        color: white; /* Vit textfärg */
+        padding: 20px; /* Inre marginaler */
       }
+
       .top {
-        width: auto;
+        width: auto; /* Använder automatisk bredd */
       }
+
       .top h1 {
-        text-align: center;
+        text-align: center; /* Centrerar texten */
       }
+
       .top nav {
-        display: flex;
-        gap: 40px;
+        display: flex; /* Använder flexbox för navigeringslänkar */
+        gap: 40px; /* Mellanrum mellan länkarna */
       }
 
       main {
-        padding: 20px;
-        max-width: 800px;
-        margin: auto;
-        background-color: rgba(255, 255, 255, 0.8);
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        margin-top: 20px;
+        padding: 20px; /* Inre marginaler */
+        max-width: 800px; /* Maximal bredd för huvudområdet */
+        margin: auto; /* Centrerar huvudområdet */
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.8
+        ); /* Halvtransparent vit bakgrund */
+        border-radius: 8px; /* Rundade hörn */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Skugga för djup */
+        margin-top: 20px; /* Översta marginalen */
       }
 
       h2 {
-        text-align: center;
-        color: black;
+        text-align: center; /* Centrerar texten */
+        color: black; /* Svart textfärg */
       }
 
       table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
+        width: 100%; /* Tar upp hela bredden */
+        border-collapse: collapse; /* Tar bort dubbla kanter */
+        margin-top: 20px; /* Marginal över tabellen */
       }
 
       th,
       td {
-        padding: 16px;
-        text-align: left;
-        border-bottom: 1px solid #ddd;
+        padding: 16px; /* Inre marginaler */
+        text-align: left; /* Vänsterjusterad text */
+        border-bottom: 1px solid #ddd; /* Underkant för rader */
       }
 
       tr:hover {
-        background-color: #f2f2f2;
+        background-color: #f2f2f2; /* Ljusgrå bakgrund på hover */
       }
 
       @media (max-width: 768px) {
         table {
-          width: 100%;
-          font-size: 14px;
+          width: 100%; /* Full bredd för tabellen */
+          font-size: 14px; /* Minskar teckenstorlek */
         }
 
         th,
         td {
-          padding: 8px;
+          padding: 8px; /* Inre marginaler */
         }
+
         footer {
-          text-align: left;
-          color: black;
-          width: 100%;
-          font-size: 16px;
+          text-align: left; /* Vänsterjusterad text */
+          color: black; /* Svart textfärg */
+          width: 100%; /* Full bredd */
+          font-size: 16px; /* Teckenstorlek */
         }
       }
     </style>

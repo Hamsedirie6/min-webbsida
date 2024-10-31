@@ -7,76 +7,76 @@
     <link rel="stylesheet" href="style.css" />
     <style>
       header {
-        display: flex;
-        flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        padding: 20px;
+        display: flex; /* Flexbox för layout */
+        flex-direction: column; /* Kolumnlayout */
+        background-color: rgba(0, 0, 0, 0.5); /* Halvgenomskinlig bakgrund */
+        color: white; /* vit textfärg */
+        padding: 20px; /* Padding runt headerinnehållet */
       }
       .top {
-        width: auto;
+        width: auto; /* Automatisk bredd */
       }
       .top h1 {
-        text-align: center;
+        text-align: center; /* Centrerar rubriken */
       }
 
       section {
-        display: flex;
-        justify-content: space-between;
-        max-width: 1200px;
-        margin: 60px auto;
-        padding: 20px;
-        color: white;
+        display: flex; /* flexbox för layout */
+        justify-content: space-between; /* Utrymmer innehållet jämnt */
+        max-width: 1200px; /* Maximal bredd för sektionen */
+        margin: 60px auto; /* Centrerar sektionen med marginaler */
+        padding: 20px; /* Padding runt sektionen */
+        color: white; /* vit textfärg */
       }
 
       .content {
-        flex: 3;
-        margin-right: 20px;
-        padding: 18px;
-        background-color: black;
-        opacity: 0.7;
+        flex: 3; /* Tar upp 3 delar av flexboxen */
+        margin-right: 20px; /* marginal till höger */
+        padding: 18px; /* Padding inuti innehållet */
+        background-color: black; /* Svart bakgrund */
+        opacity: 0.7; /* Gör bakgrunden lite genomskinlig */
       }
 
       section h2 {
-        margin-bottom: 10px;
-        font-weight: bold;
+        margin-bottom: 10px; /* Marginal under rubrikerna */
+        font-weight: bold; /* Fet stil för rubrikerna */
       }
 
       .image {
-        flex: 1.5;
+        flex: 1.5; /* Tar upp 1.5 delar av flexboxen */
       }
       .image img {
-        width: 100%;
-        height: auto;
-        border-radius: 5px;
+        width: 100%; /* Bilden tar  upp hela bredden av sin behållare */
+        height: auto; /* bevarar bilden proportioner */
+        border-radius: 5px; /* Rundar kanterna på bilden */
       }
       header nav {
-        justify-content: space-between;
-        gap: 40px;
+        justify-content: space-between; /* Utrymmer länkar jämnt */
+        gap: 40px; /* Avstånd mellan länkarna */
       }
       .bild-länk {
-        color: yellow;
+        color: yellow; /* Färgar länken gult */
       }
       @media (max-width: 768px) {
         section {
-          flex-direction: column;
-          padding: 10px;
+          flex-direction: column; /* byter till kolumnlayout för små skärmar */
+          padding: 10px; /* Mindre padding */
         }
 
         .content {
-          margin-right: 0;
-          margin-bottom: 20px;
-          opacity: 1;
+          margin-right: 0; /* Tar bort högermarginal */
+          margin-bottom: 20px; /* Lägger till marginal under innehållet */
+          opacity: 1; /* Gör innehållet helt synligt för mobila enheter */
         }
 
         .image {
-          width: 100%;
-          margin-top: 10px;
+          width: 100%; /* Bilden tar upp hela bredden */
+          margin-top: 10px; /* lägger till marginal ovanför bilden */
         }
 
         footer {
-          font-size: 14px;
-          padding: 10px;
+          font-size: 14px; /* Minskar storleken på footern */
+          padding: 10px; /* Padding runt footern */
         }
       }
     </style>

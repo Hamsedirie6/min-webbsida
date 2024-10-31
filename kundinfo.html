@@ -75,7 +75,7 @@
         height: 40px;
       }
 
-      form input[tpe="submit"] {
+      form input[type="submit"] {
         width: 100%;
         background-color: #333;
         color: white;
@@ -88,7 +88,7 @@
         transition: background-color 0.3s ease;
       }
 
-      form inpute [type="submit"]:hover {
+      form input[type="submit"]:hover {
         background-color: #555;
       }
       @media (max-width: 768px) {
@@ -136,8 +136,9 @@
       <label for="Namn">Ange Namn</label>
       <input
         type="text"
-        namn="Namn"
-        placeholder="Förnamn Efernamn"
+        id="Namn"
+        name="Namn"
+        placeholder="Förnamn Efternamn"
         required
       /><br />
       <br />
@@ -145,6 +146,7 @@
       <label for="Epost">Ange E-postadress</label>
       <input
         type="email"
+        id="Epost"
         name="E-postadress"
         placeholder="Exempel@hotmail.com"
         required
@@ -153,6 +155,7 @@
       <label for="Telefonnummer">Ange Telefonnummer</label>
       <input
         type="number"
+        id="Telefonnummer"
         name="Telefonnummer"
         placeholder="+46"
         required
@@ -160,21 +163,19 @@
 
       <label for="Kursval">Kursval</label>
       <select id="Kursval" name="kursval" required>
-        <option value="--Selct--">--Select--</option>
+        <option value="">--Välj kurs--</option>
         <option value="HTMl/CSS/JavaScript">HTMl/CSS/JavaScript</option>
         <option value="C#">C#</option>
         <option value="Python">Python</option>
         <option value="C++">C++</option>
         <option value="Databaser">Databaser</option>
         <option value="Bash">Bash</option>
-        <option value="PowerShell">PowerHhell</option>
+        <option value="PowerShell">PowerShell</option>
       </select>
       <br /><br />
-
       <label for="Kommentar">Kommentar</label><br />
-      <textarea name="Kommentar" cols="35" rows="5"></textarea>
+      <textarea id="Kommentar" name="Kommentar" cols="35" rows="5"></textarea>
       <br /><br />
-
       <input type="submit" value="Skicka" />
     </form>
     <footer>
